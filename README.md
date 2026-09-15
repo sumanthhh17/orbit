@@ -1,6 +1,6 @@
 # Orbit
 
-A private, full-stack project workspace with a responsive dashboard, project cards, a four-stage task board, search, assignees, priorities, deadlines, and an activity feed
+A private, full-stack project workspace with a responsive dashboard, project cards, a four-stage task board, search, assignees, priorities, deadlines, and an activity feed.
 
 ## Stack
 
