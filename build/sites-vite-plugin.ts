@@ -172,8 +172,9 @@ export function sites(): Plugin {
     async closeBundle() {
       if (command !== "build") return;
 
+      // Sites requires this directory name in the deployment bundle.
       const outputDirectory = resolve(root, "dist", ".openai");
-      const hostingConfig = resolve(root, ".openai", "hosting.json");
+      const hostingConfig = resolve(root, "config", "hosting.json");
       const drizzleSource = resolve(root, "drizzle");
 
       await rm(outputDirectory, { recursive: true, force: true });
