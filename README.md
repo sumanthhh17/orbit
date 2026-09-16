@@ -24,6 +24,10 @@ Apply the initial migration only once per local database. Subsequent schema chan
 
 The workspace starts empty. Choose **Load example workspace** to add three clearly described sample projects and nine tasks. Example loading is optional and only allowed once per database.
 
+## Hosting configuration
+
+Hosting settings live in `config/hosting.json`. Vite reads this file for local bindings, and the build copies it into `dist/.openai/hosting.json` together with database migrations. The generated `.openai` directory is required by the Sites deployment format; it is not a source configuration directory.
+
 ## API
 
 `GET /api/workspace` returns projects, tasks, and the latest 30 activity entries.
